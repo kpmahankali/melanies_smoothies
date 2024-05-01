@@ -22,7 +22,7 @@ snowflake_params = {
     "schema" == "PUBLIC"
 }
 
-conn = snowflake.connector.connect(**snowflake_params)
+conn = snowflake.connector.connect(snowflake_params)
 # conn = snowflake.connector.connect('snowflake')
 session = conn.session()
 
