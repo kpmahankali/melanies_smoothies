@@ -11,7 +11,18 @@ st.write(
 name_on_order = st.text_input('Name on Smoothie:')
 st.write('The name on your Smoothie will be:', name_on_order)
 
-conn = snowflake.connector.connect('snowflake')
+# Snowflake connection parameters
+snowflake_params = {
+    "account" = "QSXNGXH.XKB93585",
+    "user" = "kpmahankali2",
+    "password" = "Bilva@3189",
+    "role" = "SYSADMIN",
+    "warehouse" = "COMPUTE_WH",
+    "database" = "SMOOTHIES",
+    "schema" = "PUBLIC"
+}
+
+conn = snowflake.connector.connect(**snowflake_params)
 # conn = snowflake.connector.connect('snowflake')
 session = conn.session()
 
