@@ -21,7 +21,7 @@ snowflake_password = st.secrets["snowflake"]["Bilva3189"]
 conn = snowflake.connector.connect(
     user=snowflake_username,
     password=snowflake_password,
-    account=snowflake_account,
+    account=snowflake_account
 )
 
 # conn = st.connection("snowflake")
