@@ -13,13 +13,13 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 # Snowflake connection parameters
 snowflake_params = {
-    "account" = "QSXNGXH.XKB93585",
-    "user" = "kpmahankali2",
-    "password" = "Bilva@3189",
-    "role" = "SYSADMIN",
-    "warehouse" = "COMPUTE_WH",
-    "database" = "SMOOTHIES",
-    "schema" = "PUBLIC"
+    "account" == "QSXNGXH.XKB93585",
+    "user" == "kpmahankali2",
+    "password" == "Bilva@3189",
+    "role" == "SYSADMIN",
+    "warehouse" == "COMPUTE_WH",
+    "database" == "SMOOTHIES",
+    "schema" == "PUBLIC"
 }
 
 conn = snowflake.connector.connect(**snowflake_params)
